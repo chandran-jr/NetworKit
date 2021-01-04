@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'components/journy_title.dart';
 import 'components/button.dart';
+import 'create_log_screen.dart';
+import 'edit_log_screen.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -13,9 +15,12 @@ class Home extends StatelessWidget {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              //crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Journy(),
+                Journy(
+                  bgColor: Color(0xffFFFF00),
+                  txtColor: Color(0xffFF0000),
+                  text: 'Journy',
+                ),
                 SizedBox(
                   height: 20,
                 ),
@@ -29,12 +34,20 @@ class Home extends StatelessWidget {
                 ),
                 Button(
                   text: 'Create new page',
+                  fn: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => CreateNew()));
+                  },
                 ),
                 SizedBox(
                   height: 30,
                 ),
                 Button(
                   text: 'Edit a page',
+                  fn: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => EditLog()));
+                  },
                 ),
               ],
             ),
