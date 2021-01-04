@@ -5,13 +5,13 @@ class Journy extends StatelessWidget {
   final Color txtColor;
   final String text;
   final Function fn;
-  Journy({this.bgColor, this.txtColor, this.text,this.fn});
+
+  Journy({this.bgColor, this.txtColor, this.text, this.fn});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: fn,
       child: Container(
-        //padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: bgColor,
           borderRadius: BorderRadius.all(
@@ -19,8 +19,7 @@ class Journy extends StatelessWidget {
           ),
         ),
         width: 150,
-        //color: Color(0xffFFFF00),
-        //height: 50,
+        
         child: Center(
           child: Text(
             text,
