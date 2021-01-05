@@ -1,11 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'components/journy_title.dart';
-import 'components/save_button.dart';
 import 'components/log.dart';
+import 'components/save_button.dart';
 import 'components/date.dart';
 
-class CreateNew extends StatelessWidget {
+class EditLog extends StatefulWidget {
+  @override
+  _EditLogState createState() => _EditLogState();
+}
+
+class _EditLogState extends State<EditLog> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,29 +25,17 @@ class CreateNew extends StatelessWidget {
                 text: 'Journy',
               ),
               SizedBox(
-                height: 10,
+                height: 25,
               ),
               EditDate(),
               SizedBox(
                 height: 20,
               ),
               DailyLog(
-                text: 'contents spoken are written here',
+                text: '',
               ),
               SizedBox(
                 height: 20,
-              ),
-              FloatingActionButton(
-                onPressed: null,
-                child: Icon(
-                  Icons.mic,
-                  color: Colors.white,
-                  size: 40,
-                ),
-                backgroundColor: Color(0xff0085FF),
-              ),
-              SizedBox(
-                height: 25,
               ),
               SaveButton(),
             ],

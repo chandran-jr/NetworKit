@@ -30,7 +30,6 @@ class SaveButton extends StatelessWidget {
                     color: Color(0xFFFFFFFE),
                     fontFamily: 'Roboto',
                     fontSize: 25,
-                    //fontWeight: FontWeight.w600,
                     letterSpacing: 1,
                   ),
                 ),

@@ -33,7 +33,6 @@ class Button extends StatelessWidget {
                     color: Color(0xFFFFFFFE),
                     fontFamily: 'Roboto',
                     fontSize: 16,
-                    //fontWeight: FontWeight.w600,
                     letterSpacing: 1,
                   ),
                 ),
@@ -45,3 +44,4 @@ class Button extends StatelessWidget {
     );
   }
 }
+
