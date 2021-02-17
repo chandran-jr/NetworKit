@@ -1,3 +1,0 @@
-# Journy
-
-Coming soon.
