@@ -1,6 +1,5 @@
 .header{
     display: flex;
-
 }
 
 .header__left{
@@ -10,6 +9,10 @@
 .header__left > img{
     object-fit: contain;
     height: 40px;
+}
 
-
+.header__search{
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
