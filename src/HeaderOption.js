@@ -3,11 +3,11 @@ import './HeaderOption.css';
 
 function HeaderOption({Icon, title}) {
     return (
-        <div classname="headerOption">
-            {Icon && <Icon classname="headerOption__icon"/>}
-            <h3 classname="headerOption__title">{title}</h3>
+        <div className="headerOption">
+            {Icon && <Icon className="headerOption__icon"/>}
+            <h3 className="headerOption__title">{title}</h3>
         </div>
     )
 }
 
-export default HeaderOption
+export default HeaderOption;
