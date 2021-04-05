@@ -44,6 +44,15 @@
     font-weight: 600;
 }
 
+.sidebar__top > h4{
+    color: gray;
+    font-size: 12px;
+}
+
+.sidebar__top > h2{
+    font-size: 18px;
+}
+
 .sidebar__statemail{
     padding: 3px;
 }
