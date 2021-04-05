@@ -14,4 +14,11 @@
 .sidebar__top{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
 }
