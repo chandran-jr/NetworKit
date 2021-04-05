@@ -32,6 +32,8 @@
     object-fit: cover;
 }
 
-.sidebar__stats{
+.sidebar__stat{
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
