@@ -1,5 +1,9 @@
 .app{
   margin: 0;
+  background-color: #f3f2ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app__body{
