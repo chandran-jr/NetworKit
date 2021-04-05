@@ -13,6 +13,19 @@ function Sidebar() {
             <h4>Web Developer</h4>
         </div>
 
+        <div className="sidebar__stats">
+            <div className="sidebar__stat">
+                <p>Who viewed you</p>
+                <p className="sidebar__statNumber">
+                    3646
+                </p>
+            </div>
+
+            <div className="sidebar__stat">
+                
+            </div>
+        </div>
+
         
         <div className="sidebar__bottom">
 
