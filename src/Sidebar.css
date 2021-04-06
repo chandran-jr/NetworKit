@@ -95,3 +95,8 @@
     cursor: pointer;
     color: black;
 }
+
+.sidebar__hash{
+    margin-right: 10px;
+    margin-left: 5px;
+}
