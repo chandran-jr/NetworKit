@@ -96,6 +96,11 @@
     color: black;
 }
 
+.sidebar__bottom > p{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
 .sidebar__hash{
     margin-right: 10px;
     margin-left: 5px;
