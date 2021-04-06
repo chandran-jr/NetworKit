@@ -88,3 +88,10 @@
     margin-bottom: 2px;
     padding: 3px;
 }
+
+.sidebar__recentItem:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
