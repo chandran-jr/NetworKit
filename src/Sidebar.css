@@ -85,4 +85,6 @@
     font-weight: bolder;
     color: gray;
     cursor: pointer;
+    margin-bottom: 2px;
+    padding: 3px;
 }
