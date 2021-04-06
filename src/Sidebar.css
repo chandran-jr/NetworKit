@@ -80,5 +80,9 @@
 }
 
 .sidebar__recentItem{
-    
+    display: flex;
+    font-size: 12px;
+    font-weight: bolder;
+    color: gray;
+    cursor: pointer;
 }
