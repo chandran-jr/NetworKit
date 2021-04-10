@@ -1,6 +1,7 @@
 import CreateIcon from '@material-ui/icons/Create';
 import React from 'react';
 import './Feed.css';
+import InputOption from './InputOption';
 
 function Feed() {
     return (
@@ -16,7 +17,7 @@ function Feed() {
                 </div>
 
                     <div className="feed__inputOptions">
-                        
+                        <InputOption/>
                     </div>
 
             </div>
