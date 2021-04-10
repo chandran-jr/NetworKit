@@ -11,7 +11,7 @@ function Feed() {
                     <CreateIcon />
                     <form>
                         <input type="text" />
-                        <button>Send</button>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
             </div>
