@@ -9,6 +9,9 @@ function Feed() {
             <div className="feed__inputContainer">
                 <div className="feed__input">
                     <CreateIcon />
+                    <form>
+                        <input type="text" />
+                    </form>
                 </div>
             </div>
             
