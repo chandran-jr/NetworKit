@@ -11,3 +11,7 @@
     background-color: whitesmoke;
     border-radius: 20px;
 }
+
+.inputOption > h4{
+    margin-left: 5px;
+}
