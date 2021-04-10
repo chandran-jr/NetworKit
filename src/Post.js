@@ -11,12 +11,11 @@ function Post({name, description, message, photoUrl}) {
                     <h2>{name}</h2>
                     <p>{description}</p>
                 </div>
-
-                <div className="post__body">
+            </div>
+            
+            <div className="post__body">
                     <p>{message}</p>
                 </div>
-
-            </div>
         </div>
     )
 }

@@ -4,3 +4,21 @@
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
+.post__header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post__info{
+    margin-left: 10px;
+}
+
+.post__info > P{
+    font-size: 12px;
+    color: gray;
+}
+
+.post__body{
+    overflow-wrap: anywhere;
+}
