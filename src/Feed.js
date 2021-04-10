@@ -1,4 +1,5 @@
 import CreateIcon from '@material-ui/icons/Create';
+import ImageIcon from '@material-ui/icons/Image';
 import React from 'react';
 import './Feed.css';
 import InputOption from './InputOption';
@@ -17,7 +18,8 @@ function Feed() {
                 </div>
 
                     <div className="feed__inputOptions">
-                        <InputOption/>
+                        <InputOption Icon={ImageIcon} title="Photo" color="#70B5F9" />
+
                     </div>
 
             </div>
@@ -26,4 +28,4 @@ function Feed() {
     )
 }
 
-export default Feed
+export default Feed;
