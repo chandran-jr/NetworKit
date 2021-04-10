@@ -29,6 +29,10 @@ function Feed() {
                     </div>
 
             </div>
+
+            <div className="feed__post">
+
+            </div>
             
         </div>
     )
