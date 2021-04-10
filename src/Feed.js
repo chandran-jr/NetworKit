@@ -10,7 +10,7 @@ function Feed() {
                 <div className="feed__input">
                     <CreateIcon />
                     <form>
-                        <input type="text" />
+                        <input placeholder="Start a post" type="text" />
                         <button type="submit">Send</button>
                     </form>
                 </div>

@@ -25,6 +25,10 @@
     width: 100%;
 }
 
+.feed__input > form :hover {
+    color: gray;
+}
+
 .feed__input > form > input {
     border: none;
     flex: 1;
