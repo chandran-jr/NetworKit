@@ -25,10 +25,6 @@
     width: 100%;
 }
 
-.feed__input > form :hover {
-    color: gray;
-}
-
 .feed__input > form > input {
     border: none;
     flex: 1;
@@ -36,6 +32,7 @@
     margin-left: 10px;
     font-weight: 600;
 }
+
 
 .feed__input > form > button {
     display: none;
