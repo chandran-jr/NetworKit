@@ -19,3 +19,16 @@
     color: gray;
     padding-left: 15px;
 }
+
+.feed__input > form {
+    display: flex;
+    width: 100%;
+}
+
+.feed__input > form > input {
+    border: none;
+    flex: 1;
+    outline: none;
+    margin-left: 10px;
+    font-weight: 600;
+}
