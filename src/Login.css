@@ -1,1 +1,21 @@
-.login{}
+.login{
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Login__logoImage{
+    width: 120px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.login__appName{
+    color: #3b88c3;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
