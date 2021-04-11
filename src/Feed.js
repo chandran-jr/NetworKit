@@ -3,14 +3,19 @@ import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import ImageIcon from '@material-ui/icons/Image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Feed.css';
 import InputOption from './InputOption';
 import Post from './Post';
+import {db} from './firebase';
 
 function Feed() {
 
     const [posts,setPosts] = useState([]);
+
+    useEffect(() => {
+        db.collection("posts")
+    },[])
 
     const sendPost = e => {
         e.preventDefault();
