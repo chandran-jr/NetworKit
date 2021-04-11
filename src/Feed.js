@@ -7,12 +7,12 @@ import React, { useEffect, useState } from 'react';
 import './Feed.css';
 import InputOption from './InputOption';
 import Post from './Post';
-import {db} from './firebase';
+import { db } from './firebase';
 import firebase from 'firebase';
 
 function Feed() {
 
-    const [input,setInput] = useState("");
+    const [input,setInput] = useState('');
     const [posts,setPosts] = useState([]);
 
     useEffect(() => {
@@ -23,12 +23,13 @@ function Feed() {
                     data: doc.data(),
                 }
             ))
-        ));
+        )
+        );
     },[]);
 
     const sendPost = e => {
         e.preventDefault();
-        db.collection(posts).add({
+        db.collection('posts').add({
             name: "Govind Chandran",
             description: "React Developer",
             message: input,
@@ -59,9 +60,7 @@ function Feed() {
 
             </div>
 
-            <div className="feed__post">
-
-            {posts.map(({id, data: {name, description, message, photoUrl}}) => (
+            {posts.map(({id, data: {name, description, message, photoUrl }}) => (
                 <Post
                     key={id}
                     name={name}
@@ -70,7 +69,8 @@ function Feed() {
                     photoUrl={photoUrl}
                 />
             ))}
-            </div>
+
+            
             
         </div>
     )
