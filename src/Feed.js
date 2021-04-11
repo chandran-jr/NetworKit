@@ -3,12 +3,15 @@ import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import ImageIcon from '@material-ui/icons/Image';
-import React from 'react';
+import React, { useState } from 'react';
 import './Feed.css';
 import InputOption from './InputOption';
 import Post from './Post';
 
 function Feed() {
+
+    const [posts,setPosts] = useState([]);
+
     return (
         <div className="feed">
 
@@ -32,6 +35,11 @@ function Feed() {
             </div>
 
             <div className="feed__post">
+
+            {posts.map((post) => (
+                <Post/>
+            ))}
+
                 <Post name="Govind Chandran" description="React developer" message="LinkedIn clone!!"  />
             </div>
             
