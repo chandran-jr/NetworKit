@@ -8,18 +8,34 @@ import './Feed.css';
 import InputOption from './InputOption';
 import Post from './Post';
 import {db} from './firebase';
+import firebase from 'firebase';
 
 function Feed() {
 
+    const [input,setInput] = useState("");
     const [posts,setPosts] = useState([]);
 
     useEffect(() => {
-        db.collection("posts")
-    },[])
+        db.collection("posts").onSnapshot((snapshot) => 
+            setPosts(snapshot.docs.map((doc) => (
+                {
+                    id: doc.id,
+                    data: doc.data(),
+                }
+            ))
+        ));
+    },[]);
 
     const sendPost = e => {
         e.preventDefault();
-    }
+        db.collection(posts).add({
+            name: "Govind Chandran",
+            description: "React Developer",
+            message: input,
+            photoUrl: '',
+            timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+    };
 
     return (
         <div className="feed">
@@ -28,7 +44,7 @@ function Feed() {
                 <div className="feed__input">
                     <CreateIcon />
                     <form>
-                        <input placeholder="Start a post" type="text" />
+                        <input value={input} onChange={e => setInput(e.target.value)} placeholder="Start a post" type="text" />
                         <button onClick={sendPost} type="submit">Send</button>
                     </form>
                 </div>
@@ -45,11 +61,15 @@ function Feed() {
 
             <div className="feed__post">
 
-            {posts.map((post) => (
-                <Post/>
+            {posts.map(({id, data: {name, description, message, photoUrl}}) => (
+                <Post
+                    key={id}
+                    name={name}
+                    description={description}
+                    message={message}
+                    photoUrl={photoUrl}
+                />
             ))}
-
-                <Post name="Govind Chandran" description="React developer" message="LinkedIn clone!!"  />
             </div>
             
         </div>
