@@ -9,6 +9,11 @@ function Login() {
 
             <form>
                 <input placeholder="Full Name" type="text" />
+                <input type="text" placeholder="Profile pic URL" />
+                <input placeholder="Email" type="email" />
+                <input placeholder="Password" type="password" />
+
+                <button>Sign In</button>
             </form>
         </div>
     )
