@@ -18,7 +18,7 @@ function Login() {
             <h2 className="login__appName">NetworKit</h2>
 
             <form>
-                <input placeholder="Full Name" type="text" />
+                <input placeholder="Full Name (if registering)" type="text" />
                 <input type="text" placeholder="Profile pic URL" />
                 <input placeholder="Email" type="email" />
                 <input placeholder="Password" type="password" />
