@@ -1,4 +1,5 @@
 import React from 'react';
+import { auth } from './firebase';
 import './Login.css';
 
 function Login() {
@@ -7,7 +8,9 @@ function Login() {
 
     };
 
-    const loginToApp = () => {};
+    const loginToApp = (e) => {
+        e.preventDefault();
+    };
 
     return (
         <div className="login">
