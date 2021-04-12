@@ -20,7 +20,7 @@ function Login() {
                 <input placeholder="Email" type="email" />
                 <input placeholder="Password" type="password" />
 
-                <button type="submit" onClick={loginToApp}>Sign In</button>
+                <button className="login__signInButton" type="submit" onClick={loginToApp}>Sign In</button>
             </form>
 
             <p>Not a member?

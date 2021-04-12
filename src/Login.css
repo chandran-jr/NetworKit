@@ -3,7 +3,7 @@
     place-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 100px;
 }
 
@@ -34,4 +34,19 @@
     margin-bottom: 10px;
     border-radius: 10px;
     outline: none;
+}
+
+.login > form > button{
+    width: 365px;
+    height: 50px;
+    font-size: large;
+    color: white;
+    background-color: #3b88c3;
+    border-radius: 10px;
+    outline-offset: none;
+    cursor: pointer;
+}
+
+.login__signInButton:hover{
+    background-color: #0d8ff1;
 }
