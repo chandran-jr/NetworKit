@@ -23,7 +23,7 @@ function Login() {
                 <button className="login__signInButton" type="submit" onClick={loginToApp}>Sign In</button>
             </form>
 
-            <p>Not a member?
+            <p>Not a member? {" "}
             <span onclick={register} className="login__register">Register Now!</span>
             </p>
         </div>

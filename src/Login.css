@@ -3,7 +3,7 @@
     place-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 60px;
+    padding-top: 85px;
     padding-bottom: 100px;
 }
 
@@ -49,4 +49,13 @@
 
 .login__signInButton:hover{
     background-color: #0d8ff1;
+}
+
+.login__register{
+    color: #0d8ff1;
+    cursor: pointer;
+}
+
+.login > p {
+    margin-top: 25px;
 }
