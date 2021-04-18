@@ -25,7 +25,7 @@ function Login() {
             <form>
                 <input placeholder="Full Name (if registering)" type="text" />
                 <input type="text" placeholder="Profile pic URL" />
-                <input placeholder="Email" type="email" />
+                <input value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" type="email" />
                 <input placeholder="Password" type="password" />
 
                 <button className="login__signInButton" type="submit" onClick={loginToApp}>Sign In</button>
