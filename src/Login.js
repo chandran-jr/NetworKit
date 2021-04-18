@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { auth } from './firebase';
 import './Login.css';
 
@@ -8,6 +9,7 @@ function Login() {
     const [password,setPassword] = useState("");
     const [name,setName] = useState("");
     const [profilePicture,setProfilePicture] = useState("");
+    const dispatch = useDispatch();
     
 
     const register = () => {
@@ -20,6 +22,9 @@ function Login() {
             userAuth.user.updateProfile({
                 displayName: name,
                 photoURL : profilePicture,
+            })
+            .then(() => {
+
             })
         })
     };
