@@ -14,6 +14,14 @@ function Login() {
         if(!name) {
             return alert("Please enter your full name!");
         }
+
+        auth.createUserWithEmailAndPassword(email, password)
+        .then((userAuth) => {
+            userAuth.user.updateProfile({
+                displayName: name,
+                photoURL : profilePicture,
+            })
+        })
     };
 
     const loginToApp = (e) => {
