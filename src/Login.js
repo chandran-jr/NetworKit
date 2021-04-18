@@ -7,6 +7,7 @@ function Login() {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [name,setName] = useState("");
+    const [profilePicture,setProfilePicture] = useState("");
     
 
     const register = () => {
@@ -24,7 +25,7 @@ function Login() {
 
             <form>
                 <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Full Name (if registering)" type="text" />
-                <input type="text" placeholder="Profile pic URL" />
+                <input value={profilePicture} onChange={(e) => setProfilePicture(e.target.value)} placeholdertype="text" placeholder="Profile pic URL" />
                 <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" />
                 <input value={password} onChange={(e) => setPassword(e.target.value)}placeholder="Password" type="password" />
 
