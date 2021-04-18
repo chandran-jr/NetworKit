@@ -32,7 +32,7 @@ function Login() {
                     photoUrl: profilePicture,
                 }));
             });
-        }).catch((error) => {alert(error);});
+        }).catch((error) => alert(error));
     };
 
     const loginToApp = (e) => {
