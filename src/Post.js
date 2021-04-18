@@ -23,10 +23,10 @@ function Post({name, description, message, photoUrl}) {
                 </div>
 
             <div className="post__buttons">
-                <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="gray" />
-                <InputOption Icon={ChatOutlinedIcon} title="Comment" color="gray" />
-                <InputOption Icon={ShareOutlinedIcon} title="Share" color="gray" />
-                <InputOption Icon={SendOutlinedIcon} title="Send" color="gray" />
+                <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="#70B5F9" />
+                <InputOption Icon={ChatOutlinedIcon} title="Comment" color="#47d147" />
+                <InputOption Icon={ShareOutlinedIcon} title="Share" color="#ffa31a" />
+                <InputOption Icon={SendOutlinedIcon} title="Send" color="salmon" />
             </div>
 
         </div>
