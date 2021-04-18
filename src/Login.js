@@ -12,7 +12,7 @@ function Login() {
 
     const register = () => {
         if(!name) {
-            return alert("Please enter your full name!")
+            return alert("Please enter your full name!");
         }
     };
 
@@ -35,7 +35,7 @@ function Login() {
             </form>
 
             <p>Not a member? {" "}
-            <span onclick={register} className="login__register">Register Now!</span>
+            <span onClick={register} className="login__register">Register Now!</span>
             </p>
         </div>
     )
