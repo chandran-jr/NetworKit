@@ -6,17 +6,13 @@ import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
 import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 import InputOption from './InputOption';
 import './Post.css';
-import { useSelector } from 'react-redux';
-import { selectUser } from './features/counter/userSlice';
 
 function Post({name, description, message, photoUrl}) {
-
-    const user = useSelector(selectUser);
     
     return (
         <div className="post">
             <div className="post__header">
-                <Avatar src={photoUrl}>{user.email[0]}</Avatar>
+                <Avatar src={photoUrl}>{name[0].toUpperCase()}</Avatar>
                 <div className="post__info">
                     <h2>{name}</h2>
                     <p>{description}</p>
