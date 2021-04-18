@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import Header from './Header';
 import {useDispatch, useSelector} from 'react-redux';
-import {selectUser} from './features/counter/userSlice';
+import {login, logout, selectUser} from './features/counter/userSlice';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Login from './Login';
@@ -16,9 +16,11 @@ function App() {
   useEffect(() => {
     auth.onAuthStateChanged(userAuth => {
         if(userAuth) {
-
+            dispatch(login({
+              
+            }));
         } else {
-
+            dispatch(logout());
         }
     });
   },[])
