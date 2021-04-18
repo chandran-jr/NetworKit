@@ -26,7 +26,10 @@ function Login() {
             })
             .then(() => {
                 dispatch(login({
-                    
+                    email: userAuth.user.email,
+                    uid: userAuth.user.uid,
+                    displayName: name,
+                    photoUrl: profilePicture,
                 }));
             });
         });
