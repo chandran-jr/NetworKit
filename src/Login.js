@@ -46,7 +46,7 @@ function Login() {
 
             <form>
                 <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Full Name (if registering)" type="text" />
-                <input value={profilePicture} onChange={(e) => setProfilePicture(e.target.value)} placeholdertype="text" placeholder="Profile pic URL" />
+                <input value={profilePicture} onChange={(e) => setProfilePicture(e.target.value)} placeholdertype="text" placeholder="Profile pic URL (optional)" />
                 <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" />
                 <input value={password} onChange={(e) => setPassword(e.target.value)}placeholder="Password" type="password" />
 
