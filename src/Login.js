@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { login } from './features/counter/userSlice';
 import { auth } from './firebase';
 import './Login.css';
 
@@ -24,9 +25,11 @@ function Login() {
                 photoURL : profilePicture,
             })
             .then(() => {
-
-            })
-        })
+                dispatch(login({
+                    
+                }));
+            });
+        });
     };
 
     const loginToApp = (e) => {
