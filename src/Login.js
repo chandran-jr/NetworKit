@@ -11,7 +11,9 @@ function Login() {
     
 
     const register = () => {
-
+        if(!name) {
+            return alert("Please enter your full name!")
+        }
     };
 
     const loginToApp = (e) => {
