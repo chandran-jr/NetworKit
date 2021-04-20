@@ -1,5 +1,5 @@
 import { Avatar } from '@material-ui/core';
-import React from 'react';
+import React, {forwardRef} from 'react';
 import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
 import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
@@ -7,7 +7,7 @@ import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 import InputOption from './InputOption';
 import './Post.css';
 
-function Post({name, description, message, photoUrl}) {
+const Post = forwardRef(({name, description, message, photoUrl}) => {
     
     return (
         <div className="post">
@@ -33,5 +33,6 @@ function Post({name, description, message, photoUrl}) {
         </div>
     )
 }
+)
 
 export default Post
