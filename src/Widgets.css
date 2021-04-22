@@ -20,3 +20,9 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+.widgets__article{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
