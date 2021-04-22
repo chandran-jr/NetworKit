@@ -28,7 +28,7 @@ function Widgets() {
                 <InfoIcon />
             </div>
             {newsArticle("Chandran launches NetworKit", "The web app has no potential whatsover😪")}
-            {newsArticle("Covid-19 increases", "Indian condition severe as cases rise rapidly☠")}
+            {newsArticle("Covid-19 increases", "Indian condition severe as cases rise rapidly💀")}
             {newsArticle("Doge hits ATH", "Elon tweet boosts the coin yet again😳")}
             {newsArticle("Neuralink making progress", "Monkey learns to play video games using neurachip😎")}
         </div>
