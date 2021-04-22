@@ -1,8 +1,8 @@
 # NetworKit
 
-<img src = "screenshots/app.PNG" width = "300px">
+<img src = "screenshots/app.PNG">
 
-<img src = "screenshots/login.PNG" width = "300px">
+<img src = "screenshots/login.PNG">
 
 ## Available Scripts
 
