@@ -26,3 +26,16 @@
     padding: 10px;
     cursor: pointer;
 }
+
+.widgets__article:hover{
+    background-color: whitesmoke;
+}
+
+.widgets__left{
+    margin-right: 5px;
+    color: #3b88c3;
+}
+
+.widgets__left > .MuiSvgIcon-root{
+    font-size: 15px;
+}
